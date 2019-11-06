@@ -1,5 +1,8 @@
 import crypto from 'crypto'
 
-export default function random(): string {
-  return crypto.randomBytes(16).toString('hex')
+export default function random(num) {
+  return crypto
+    .randomBytes(num)
+    .toString('hex')
+    .substr(0, num)
 }

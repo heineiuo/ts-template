@@ -1,6 +1,17 @@
 {
   "scripts": {
+    "test": "jest",
     "build": "babel src -d build --source-maps --extensions \".ts\" && tsc -d"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "coverageDirectory": "./coverage",
+    "coverageReporters": [
+      "lcov"
+    ]
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
@@ -14,6 +25,7 @@
     "eslint": "^6.5.1",
     "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^24.9.0",
     "typescript": "^3.6.4"
   }
 }

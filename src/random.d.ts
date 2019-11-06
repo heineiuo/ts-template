@@ -1,1 +1,1 @@
-export default function random(): string
+export default function random(num: number): string
