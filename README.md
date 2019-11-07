@@ -5,6 +5,7 @@
 
 ```json
 {
+  "editor.formatOnSave": true,
   "javascript.validate.enable": false,
   "eslint.alwaysShowStatus": true,
   "eslint.enable": true,
