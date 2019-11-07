@@ -1,7 +1,8 @@
 {
   "scripts": {
+    "prepublish": "export NODE_ENV=production && yarn build",
     "test": "jest",
-    "build": "babel src -d build --source-maps --extensions \".ts\" && tsc -d"
+    "build": "babel src -d build --ignore 'src/tests' --source-maps --extensions \".ts\" && tsc -d"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -20,6 +21,8 @@
     "@babel/plugin-syntax-bigint": "^7.4.4",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-typescript": "^7.6.0",
+    "@types/jest": "^24.0.22",
+    "@types/node": "^12.12.6",
     "@typescript-eslint/eslint-plugin": "^2.4.0",
     "@typescript-eslint/parser": "^2.4.0",
     "eslint": "^6.5.1",
